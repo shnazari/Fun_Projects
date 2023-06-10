@@ -1,1 +1,3 @@
 # Fun_Projects
+
+In this repository, I will share the projects that I have completed as homework assignments or for fun. Each project will be in a separate folder, accompanied by a ReadMe text file where I explain what I have done in that particular project. I typically strive to include sufficient comments in the code to ensure readability and ease of understanding. However, if you come across a project of interest where you believe there may be a bug, require additional explanations, or find it difficult to follow, please feel free to contact me at nazari.hamid.85@gmail.com. We can then discuss it further and address any concerns together.
