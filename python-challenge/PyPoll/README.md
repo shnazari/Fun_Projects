@@ -1,3 +1,5 @@
+## Brief description:
+
 In PyPoll project a set of poll data called election_data.csv is given in the Resources directory. 
 
 The dataset is composed of three columns: "Voter ID", "County", and "Candidate". 

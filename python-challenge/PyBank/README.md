@@ -1,3 +1,5 @@
+## Brief description:
+
 In PyBank project we will present a script that analyzes the financial records of a dummy company. 
 The data set is provided in a separate folder named as "Resources" which is a csv file and contains two columns, Date and Profit/Losses.
 

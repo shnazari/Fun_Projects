@@ -15,7 +15,7 @@ The out pull will both be written in the terminal and will be saved in "analysis
 '''
 
 # The path to the data set
-file_path = os.path.join('Resources', 'election_data.csv')
+file_path = os.path.join('python-challenge','PyPoll','Resources', 'election_data.csv')
 
 #  Read the data set
 with open(file_path, 'r') as csv_file:
@@ -44,7 +44,7 @@ with open(file_path, 'r') as csv_file:
 total_votes = len(ballot_id)
 
 # Write the analysis to the terminal as well as the .txt file
-out_put_path = os.path.join('analysis', 'analysis.txt')
+out_put_path = os.path.join('python-challenge','PyPoll','analysis', 'analysis.txt')
 with open(out_put_path, 'w') as text:
     text.write('Election Results')
     print('Election Results')

@@ -19,7 +19,7 @@ in the analysis folder.
 '''
 
 # The path to the data set
-csv_path = os.path.join('Resources','budget_data.csv')
+csv_path = os.path.join('python-challenge','PyBank','Resources','budget_data.csv')
 
 #  Reading the csv file
 with open(csv_path, 'r') as csv_file:
@@ -59,7 +59,8 @@ with open(csv_path, 'r') as csv_file:
             dec_idx.append(i+1)
 
     # Writing the analysis in analysis\analysis.txt file
-    output_path = 'analysis/analysis.txt'
+
+    output_path = os.path.join('python-challenge','PyBank','analysis','analysis.txt')
     with open(output_path, 'w') as text:
         text.write('Financial Analysis')
         text.write('\n----------------------------')
