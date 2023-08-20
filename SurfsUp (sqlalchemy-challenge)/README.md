@@ -20,7 +20,7 @@ In this section, we’ll use Python and SQLAlchemy to do a basic climate analysi
 	- Query the previous 12 months of TOBS data for that station.
 	- Plot the results as a histogram
 
-## Part 2: Climate App wil Flask API
+## Part 2: Climate App with Flask API
 We will design a Flask API based on the queries that you just developed. To do so, we use Flask to create the routes as follows:
 	- Start at the homepage.
 	- List all the available routes.
