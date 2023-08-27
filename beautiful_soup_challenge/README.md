@@ -19,3 +19,6 @@ In section 2, we will scrape the Mars Temerature Data Site [https://static.bc-ed
 		- Which months have the lowest and the highest atmospheric pressure on Mars?
 		- About how many terrestrial (Earth) days exist in a Martian year?
 	6 - Export the DataFrame to a CSV file.
+	
+## References
+The Mars News website https://static.bc-edx.com/data/web/mars_news/index.html is operated by edX Boot Camps LLC for educational purposes only. The news article titles, summaries, dates, and images were scraped from NASA's Mars NewsLinks to an external site. website in November 2022. Images are used according to the JPL Image Use PolicyLinks to an external site., courtesy NASA/JPL-Caltech.
