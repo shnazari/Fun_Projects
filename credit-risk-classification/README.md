@@ -1,0 +1,23 @@
+# Background
+In this Challenge, we use various techniques to train and evaluate a model based on loan risk. We have used a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
+
+## Overview of the Analysis
+
+The dataset for his study consists of 77536 entries with 7 features (loan_size, interest_rate, borrower_income, debt_to_income, num_of_accounts, derogatory_marks, total_debt). The label feature loan_status also exits in this dataset which makes it appropriaate to perform a supervised learning to predict a loan_status. The model we use in this short study is LogisticRegression model. 
+
+## Results
+
+Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+
+* LogisticRegression model over the original data:
+  * This model returns a 99% overall accuracy. The precision in predicting healy loans is 1 meaning that it predicts thiese types of loans very well. On the other hand, the recall in predicting high-risk loans is .89, which means that this model doesnot predict high-risk loans as well as healthy loans. In otherwords, it might not be a good model for high-risk loans.
+
+* LogisticRegression model over a the resmapled data:
+  * The accuracy for this model is 100%, with precision in predicting healy loans and recall in predicting highrisk models as good as one. But the f1-score in prdicting high-risk loans in this case is .93. 
+
+## Summary
+
+
+* Using resampling slightly increased the perfomance of the LogisticRegression model. This implies that this modified model is more reliable in predicting loan status.
+* Both models are good for predicting healthy loans but for predicting high-risk loans it is worth investigating more to find a better model that these two!
+
