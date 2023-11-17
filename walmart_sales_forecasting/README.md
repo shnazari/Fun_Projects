@@ -1,8 +1,8 @@
-# Estimate the daily sales of Walmart retail goods
+# Walmart Daily Sales Forecasting
 
 ## Overview
 
-In this project we will use machine learning methods and techniques (TBD) to forecast daily sales of Walmart using hierarchical sales data from Walmart.
+In this project we will use machine learning methods and techniques to forecast daily sales of Walmart using hierarchical sales data from Walmart.
 
 ## Dataset
 The dataset for this project is made by **Walmart**, involves the unit sales of various products sold in the USA, organized in the form of **grouped time series**. More specifically, the dataset involves the unit sales of 3,049 products, classified in **3 product categories** (Hobbies, Foods, and Household) and **7 product departments**, in which the above-mentioned categories are disaggregated.  The products are sold across ten stores, located in three States (CA, TX, and WI). 
@@ -53,20 +53,22 @@ The data set is available in the kaggle competition [m5-forecasting-accuracy](ht
 
 #### Separating dataframes for 3 states
 We will attempt to forecast the daily sales of all 10 Walmart stores separately. To that end we separate the data set into 3 data frames, one for each of the states California, Texas and Wisconsin.
-	* California Sales dataframe has shape **(12196, 1947)** with 0 NA values
-	* Texas Sales dataframe has shape **(9147, 1947)** with 0 NA values
-	* Wisconsin Sales dataframe has shape **(9147, 1947)** with 0 NA values
+
+	- California Sales dataframe has shape **(12196, 1947)** with 0 NA values
+	- Texas Sales dataframe has shape **(9147, 1947)** with 0 NA values
+	- Wisconsin Sales dataframe has shape **(9147, 1947)** with 0 NA values
 
 We also separate the Sell Prices dataframe for all 10 stores in three states:
-	* California sell_prices dataframe has shape **(2708822, 4)** with 0 NA values
-	* Texas sell_prices dataframe has shape **(2092122, 4)** with 0 NA values
-	* Wisconsin sell_prices dataframe has shape **(2040177, 4)** with 0 NA values
+	
+	- California sell_prices dataframe has shape **(2708822, 4)** with 0 NA values
+	- Texas sell_prices dataframe has shape **(2092122, 4)** with 0 NA values
+	- Wisconsin sell_prices dataframe has shape **(2040177, 4)** with 0 NA values
 
 #### Melting the train dataframe
 Since sell dates for all stores are given as columns for different items we melt the date columns into one column. A smple of the meleted dataframe for Califoria stores is shown below:
 ![Califonia_Sales](images/California_sales.png)
 
-#### erging all dataframes
+#### Merging all dataframes
 
 After separating dataframes for three staes and melting the sales dataframe or date columns, all three dataframes are now ready to be merged. We merge the calendar and sell_prices dataframes into the sales dataframe for all three states, separately.
 ![Merged_data_sets](images/merged_dataset.png)
